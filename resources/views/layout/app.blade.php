@@ -20,13 +20,14 @@
          @include('inc.message')
        @yield('content') 
 
-
-
-
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ asset('js/bootstrap.min.js') }}"></script> 
-       </div>  
+       </div> 
+       
+<script src="{{url('/vendor/unisharp/laravel-ckeditor/ckeditor.js')}}"></script>    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script> 
     </body>
 </html>
