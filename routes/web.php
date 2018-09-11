@@ -20,3 +20,6 @@ Route::get('/about', 'PagesController@about');
 Route::get('/service', 'PagesController@service');
 
 Route::resource('posts', 'PostsController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
