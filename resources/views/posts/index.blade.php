@@ -13,7 +13,7 @@
 
      @foreach($posts as $post)
      <p><a href="/myblog/public/posts/{{$post->id}}"> {{$post->title}}</a></p>
-     <small> {{$post->created_at}}</small>
+     <small> {{$post->created_at}} by {{$post->user->name}}</small>
 
       @endforeach
 
