@@ -1,0 +1,4 @@
+ <ul class="nav navbar-nav navbar-right">
+            <li><a href="/myblog/public/posts/create">Create post</a> </li>
+
+          </ul>
